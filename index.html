@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171717" />
+  <title>Happy Teachers' Day | Sir Randy Bello</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <span class="eyebrow">A MESSAGE OF GRATITUDE</span>
+      <h1>Happy Teachers' Day</h1>
+      <p>A personalized digital card for <strong id="heroRecipient">Sir Randy Bello</strong>.</p>
+    </header>
+
+    <section class="card-stage" aria-label="Teachers' Day card">
+      <div class="book" id="book">
+
+        <!-- COVER -->
+        <article class="cover" id="cover">
+          <div class="cover-inner">
+            <div class="mini-label">TEACHERS' DAY • 2026</div>
+            <div class="star">✦</div>
+            <h2>To Our<br><em>Wonderful Teacher</em></h2>
+            <p class="cover-recipient" id="coverRecipient">Sir Randy Bello</p>
+            <p class="cover-note">
+              Thank you for inspiring us, guiding us, and helping us become better every day.
+            </p>
+            <button class="primary-btn" id="openBtn">Open Card <span>→</span></button>
+          </div>
+          <div class="cover-shine"></div>
+        </article>
+
+        <!-- INSIDE SPREAD -->
+        <div class="inside" id="inside">
+          <article class="page photo-page">
+            <span class="page-no">01</span>
+            <div class="photo-frame">
+              <img id="teacherPhoto" src="assets/teacher-photo.jpg" alt="Photo for Sir Randy Bello" />
+            </div>
+            <div class="caption">
+              <span>To an inspiring teacher</span>
+              <h3>Thank you for everything.</h3>
+            </div>
+          </article>
+
+          <article class="page message-page">
+            <span class="page-no">02</span>
+            <div class="message-content">
+              <span class="small-title" id="dearLine">DEAR SIR RANDY BELLO,</span>
+              <h2>Thank You</h2>
+              <div class="message" id="messageText"></div>
+
+              <div class="signature">
+                <span>With heartfelt gratitude,</span>
+                <strong>From Your Students,</strong>
+                <b id="senderDisplay">Angela Joy Ibanez</b>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- FINAL PAGE -->
+        <article class="final-page" id="finalPage">
+          <div class="final-inner">
+            <span class="mini-label">WITH APPRECIATION</span>
+            <div class="star">✦</div>
+            <h2>Happy<br /><em>Teachers' Day!</em></h2>
+            <p>Thank you for being an amazing teacher and for making a difference in the lives of your students.</p>
+            <div class="heart">♥</div>
+            <span class="tiny">With appreciation and gratitude</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button class="control-btn" id="prevBtn" type="button">← Previous</button>
+      <span id="pageIndicator">Cover</span>
+      <button class="control-btn" id="nextBtn" type="button">Next →</button>
+    </div>
+
+    <!-- PERSONALIZATION -->
+    <section class="customizer">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PERSONALIZE YOUR CARD</span>
+          <h2>Make It Yours</h2>
+        </div>
+        <span class="gear">✦</span>
+      </div>
+
+      <div class="field-grid">
+        <label>
+          <span>Teacher's Name</span>
+          <input id="recipientInput" type="text" value="Sir Randy Bello" />
+        </label>
+        <label>
+          <span>Your Name</span>
+          <input id="senderInput" type="text" value="Angela Joy Ibanez" />
+        </label>
+      </div>
+
+      <div class="upload-grid">
+        <label class="upload-card">
+          <span class="upload-icon">▧</span>
+          <span>
+            <strong>Add Your Photo</strong>
+            <small>Choose an image from your device</small>
+          </span>
+          <input id="photoInput" type="file" accept="image/*" />
+        </label>
+
+        <label class="upload-card">
+          <span class="upload-icon">♪</span>
+          <span>
+            <strong>Add Music</strong>
+            <small>MP3, M4A, WAV and other audio files</small>
+          </span>
+          <input id="musicInput" type="file" accept="audio/*" />
+        </label>
+      </div>
+
+      <label class="editor">
+        <span>✎ Customize Your Message</span>
+        <textarea id="messageInput" rows="9">Happy Teacher's Day, Sir Randy!
+
+Thank you for your patience, guidance, encouragement, and dedication.
+
+You have taught us more than lessons from a classroom. You have inspired us to believe in ourselves, work hard, and never stop learning.
+
+We are grateful for every lesson, every reminder, every challenge, and every moment you have shared with us.
+
+Your effort and kindness truly make a difference in the lives of your students.</textarea>
+      </label>
+
+      <button class="update-btn" id="updateBtn" type="button">✓ Update Message</button>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="music-player">
+      <div class="music-details">
+        <div class="disc" id="disc">♪</div>
+        <div>
+          <strong id="musicName">Teachers' Day Music</strong>
+          <small id="musicStatus">Click play to listen</small>
+        </div>
+      </div>
+      <button class="play-btn" id="musicButton" type="button" aria-label="Play music">▶</button>
+      <audio id="audioPlayer" preload="metadata" src="assets/teachers-day-song.m4a"></audio>
+    </section>
+
+    <footer>
+      Made with <span>♥</span> for <strong id="footerRecipient">Sir Randy Bello</strong><br />
+      From Your Students, <strong id="footerSender">Angela Joy Ibanez</strong>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
